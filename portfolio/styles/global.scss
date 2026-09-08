@@ -1,0 +1,30 @@
+@use './tokens';
+
+// Reset mínimo — solo lo indispensable, nada de normalize.css completo.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  // El "smooth" que pediste al bajar la página — aplica a cualquier
+  // scroll por ancla (ej: nav → #experience) y a scrollIntoView().
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif; // placeholder — se define bien cuando entremos a tipografía
+}
+
+// Igual que hicimos con --duration-* en tokens.scss: si el usuario pidió
+// menos movimiento a nivel sistema operativo, el scroll salta en vez de
+// animarse. No es opcional — es un requisito de accesibilidad real.
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

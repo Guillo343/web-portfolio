@@ -1,7 +1,13 @@
-import React from 'react'
+import styles from './Footer.module.scss';
 
-export const Footer = () => {
+export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div>footer</div>
-  )
+    <footer className={styles.footer}>
+      <p>© {currentYear} — Guillo</p>
+
+      {/* Links a GitHub/LinkedIn se agregan cuando definamos esos datos */}
+    </footer>
+  );
 }
