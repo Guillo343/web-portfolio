@@ -1,10 +1,7 @@
-// =============================================================================
 // Design tokens — single source of truth for color.
 // Applied via [data-theme] on <html>, switched by ThemeService.
-// =============================================================================
 
 :root {
-  // ---- Light (default) ----------------------------------------------------
   --color-bg: #FAF6F0;
   --color-bg-alt: #F0EAE0;
   --color-surface: #FFFFFF;
@@ -12,30 +9,29 @@
   --color-text-muted: #595F61;
   --color-border: #C2C9CC;
 
-  --color-accent: #0E7D8C;       // teal, AA-safe on cream
+  --color-accent: #0E7D8C;       // teal
   --color-accent-strong: #075862;
   --color-accent-soft: #89EFE0;  // decorative only — not for text
   --color-error: #A62413;        // reserved, semantic only
 
-  // ---- Shape / motion (theme-independent) ----------------------------------
+  // Shape / motion 
   --radius-sm: 4px;
   --radius-md: 8px;
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --duration-fast: 150ms;
   --duration-base: 300ms;
 
-  // ---- Spacing scale (theme-independent) ------------------------------------
-  // Base 4px, escala consistente para margin/padding/gap en todo el sitio.
-  --space-1: 0.25rem;  // 4px  — detalles finos
-  --space-2: 0.5rem;   // 8px  — gap entre elementos chicos
-  --space-3: 1rem;     // 16px — padding de componentes
-  --space-4: 1.5rem;   // 24px — separación entre bloques relacionados
+  // Spacing scale, Base 4px
+  --space-1: 0.25rem;  // 4px
+  --space-2: 0.5rem;   // 8px
+  --space-3: 1rem;     // 16px
+  --space-4: 1.5rem;   // 24px
   --space-5: 2rem;     // 32px
-  --space-6: 3rem;     // 48px — separación entre subsecciones
+  --space-6: 3rem;     // 48px
   --space-7: 4rem;     // 64px
-  --space-8: 6rem;     // 96px — padding vertical entre secciones principales
+  --space-8: 6rem;     // 96px
 
-  // ---- Layout ----------------------------------------------------------------
+  // Layout 
   --container-max-width: 1100px;
   --container-padding-inline: var(--space-4);
 }
@@ -48,10 +44,10 @@
   --color-text-muted: #9BA3A8;
   --color-border: #383B3D;
 
-  --color-accent: #1ECBE1;       // vibrant teal — has room to breathe on dark
+  --color-accent: #1ECBE1;       // vibrant teal
   --color-accent-strong: #89EFE0;
   --color-accent-soft: #16A2B4;
-  --color-error: #E1341E;        // brighter for visibility on dark, still semantic-only
+  --color-error: #E1341E;        // 
 }
 
 // Respect users who've asked for less motion, globally.
