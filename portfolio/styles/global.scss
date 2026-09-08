@@ -17,6 +17,11 @@ body {
   color: var(--color-text);
   font-family: system-ui, sans-serif; // placeholder — se define bien cuando entremos a tipografía
 }
+.container {
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline);
+}
 
  @media (prefers-reduced-motion: reduce) {
   html {
